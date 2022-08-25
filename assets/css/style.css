@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #ee8517;
+  --secondary-color: #f19d44;
+  --link-active: #c56c0e;
+  --dark-color: #0f0801;
+}
+
+
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: .3s ease-in-out;
+}
+
+a:hover {
+  color: var(--link-active);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-size: clamp(1rem, 0.9697rem + 0.1294vw, 1.125rem);
+}
+
+/* Header & Menus */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.menu-wrapper ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-wrapper ul li {
+  list-style: none;
+}
+
+.menu-wrapper ul li a {
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.menu-wrapper ul li a:hover {
+  color: var(--link-active);
+}
+
+.menu-wrapper ul li:last-child a {
+  margin: 0;
+}
+
+nav {
+  padding: 20px 0;
+  background: rgba(61 44 141 / 15%);
+  /* box-shadow: 0 3px 15px rgb(0 0 0 / 15%); */
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,0.10);
+  bottom: -10px;
+  left: 0;
+}
+
+.logo-wrapper a {
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+
+.logo-wrapper a span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: var(--secondary-color);
+  text-align: center;
+  border-radius: 10px 5px;
+}
+
+/* Banner Hero */
+#hero {
+  min-height: 100vh;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  background-image: url('../images/banner-02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgb(15,8,1);
+  background: linear-gradient(0deg, rgba(15,8,1,0.804359243697479) 0%, rgba(15,8,1,0) 100%);
+}
+
+.hero-cta a {
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  transition: .3s ease;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.hero-cta a:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.hero-title h6 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a.cta-rent-now {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Desktop Device */
+
+/* Tablet Device */
