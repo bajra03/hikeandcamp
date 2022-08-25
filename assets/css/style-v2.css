@@ -189,6 +189,8 @@ ul.menu-wrapper {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: block;
+  width: 100%;
 }
 
 ul.menu-wrapper li {
@@ -202,12 +204,13 @@ ul.menu-wrapper li a {
   padding: 5px 10px;
   color: #ffffff;
   transition: var(--transition-default);
-  display: inline-block;
+  display: block;
   font-weight: 500;
 }
 
 ul.menu-wrapper li a:hover {
   color: var(--text-primary);
+  background-color: #1a1a1a;
 }
 
 #menu-section .social-list {
@@ -276,6 +279,18 @@ main {
   align-items: center; */
 }
 
+#banner .content-wrapper::before {
+  content: "";
+  width: 2px;
+  height: 80px;
+  position: absolute;
+  top: -125px;
+  left: 50%;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  border-radius: 20px;
+}
+
 #banner .content-wrapper small {
   text-transform: uppercase;
   font-weight: 700;
@@ -302,6 +317,11 @@ main {
   background: no-repeat;
   border-color: var(--bg-primary);
   font-weight: 400;
+  color: var(--text-primary);
+}
+
+#banner .content-wrapper a:hover {
+  color: var(--text-white);
 }
 
 #banner .content-wrapper a span {
@@ -431,16 +451,19 @@ main {
 
 .content-wrapper__about h2 {
   position: relative;
-  padding-left: 10px;
+  /* padding-left: 10px; */
+  display: inline-block;
 }
 
-.content-wrapper__about h2::before {
+.content-wrapper__about h2::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 5px;
-  height: 100%;
-  background: var(--bg-primary);
+  right: -90px;
+  top: 50%;
+  width: 70px;
+  height: 2px;
+  transform: translateY(-50%);
+  background: rgb(194,103,28);
+  background: linear-gradient(90deg, rgba(194,103,28,1) 0%, rgba(194,103,28,0) 100%);
 }
 /* EOF Section About */
