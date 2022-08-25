@@ -9,7 +9,7 @@
   --text-white: #ffffff;
   --text-primary: #C2671C;
 
-  --transition-default: .3s ease-in-out;
+  --transition-default: .2s ease-in-out;
 }
 /* EOF VARIABLE */
 
@@ -65,6 +65,47 @@ section {
 
 p {
   font-weight: 300;
+}
+
+.hnc-btn {
+  border-radius: 0;
+  padding: 10px 50px;
+  position: relative;
+}
+
+.hnc-btn--primary {
+  color: var(--text-primary);
+  border-color: var(--bg-primary);
+}
+
+.hnc-btn--primary:hover {
+  color: var(--text-white);
+  border-color: var(--bg-primary);
+}
+
+.hnc-btn--secondary {
+  color: var(--text-white);
+  border-color: var(--bg-white);
+}
+
+.hnc-btn--secondary:hover {
+  color: var(--text-primary);
+  border-color: var(--bg-white);
+}
+
+.hnc-btn--secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: var(--bg-white);
+  transition: width var(--transition-default);
+}
+
+.hnc-btn--secondary:hover::before {
+  width: 100%;
 }
 /* EOF GENERAL */
 
@@ -310,14 +351,8 @@ main {
 
 #banner .content-wrapper a {
   font-size: 1.2rem;
-  padding: 10px 50px;
-  position: relative;
   display: inline-block;
-  border-radius: 0;
-  background: no-repeat;
-  border-color: var(--bg-primary);
   font-weight: 400;
-  color: var(--text-primary);
 }
 
 #banner .content-wrapper a:hover {
