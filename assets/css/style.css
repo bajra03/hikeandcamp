@@ -198,7 +198,7 @@ p {
 }
 
 .hnc-icon-wrapper {
-  gap: 30px;
+  gap: 10px;
 }
 
 .hnc-icon__inner {
@@ -582,11 +582,11 @@ main {
 
 .hnc-highlight-product__details {
   background-color: #0e0e0e;
-  padding: 0 20px 20px;
+  padding: 20px 20px;
   border-radius: 0 0 0.375rem 0.375rem;
 }
 
 .hnc-highlight-product__title {
-  margin: 30px 0 20px;
+  margin: 0 0 20px;
 }
 /* EOF Section Offers */

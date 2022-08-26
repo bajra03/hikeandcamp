@@ -52,7 +52,7 @@
 
   .hnc-highlight-product__details {
     border-radius: 0;
-    padding: 0 70px 0;
+    padding: 30px;
   }
 
   .hnc-highlight-product__title  {
@@ -61,4 +61,8 @@
 }
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {  }
+@media (min-width:1281px) { 
+  .hnc-highlight-product__details {
+    padding: 0 70px;
+  }
+}
