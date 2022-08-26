@@ -170,10 +170,6 @@ p {
   gap: 20px;
 }
 
-.hnc-social-links li {
-  
-}
-
 .hnc-social-links li a {
   color: var(--text-white);
   font-size: 1.2rem;
