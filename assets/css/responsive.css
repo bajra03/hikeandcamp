@@ -5,9 +5,58 @@
 @media (min-width:961px)  {  }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) { 
-  #banner .content-wrapper .content {
+@media (min-width:1024px) { 
+  .hnc-content--compact {
     max-width: 65%;
+  }
+
+  .hnc-icon-wrapper {
+    gap: 80px;
+  }
+
+  .hnc-icon__inner {
+    min-width: 90px;
+  }
+
+  .hnc-icon__inner::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: -50%;
+    top: 0;
+    background: rgb(2,3,3);
+    background: linear-gradient(180deg, rgba(2,3,3,0.196516106442577) 0%, rgba(2,3,3,0.7455357142857143) 50%, rgba(2,3,3,0.2049194677871149) 100%);
+  }
+
+  .hnc-icon__inner:last-child:after {
+    display: none;
+  }
+
+  .hnc-highlight-product__imgs img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .hnc-image {
+    width: unset;
+  }
+
+  .hnc-highlight-products { 
+    margin-top: 6rem;
+  }
+
+  .hnc-highlight-product__imgs img {
+    border-radius: 0;
+  }
+
+  .hnc-highlight-product__details {
+    border-radius: 0;
+    padding: 0 70px 0;
+  }
+
+  .hnc-highlight-product__title  {
+    margin: 0 0 15px;
   }
 }
 
