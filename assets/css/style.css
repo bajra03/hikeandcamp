@@ -144,6 +144,11 @@ p {
   background: linear-gradient(90deg, rgba(194,103,28,1) 0%, rgba(194,103,28,0) 100%);
 }
 
+.hnc-title span {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
 .hnc-title--main {
   font-weight: 700;
   font-size: 3rem;
@@ -399,7 +404,7 @@ main {
 /* EOF MAIN */
 
 /* BANNER */
-#banner {
+#home-banner {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -409,7 +414,7 @@ main {
   position: relative;
 }
 
-#banner::before {
+#home-banner::before {
   content: "";
   position: absolute;
   background: rgb(27,30,32);
@@ -420,11 +425,11 @@ main {
   left: 0;
 }
 
-#banner .content-wrapper {
+#home-banner .content-wrapper {
   position: relative;
 }
 
-#banner .content-wrapper::before {
+#home-banner .content-wrapper::before {
   content: "";
   width: 2px;
   height: 80px;
@@ -436,21 +441,21 @@ main {
   border-radius: 20px;
 }
 
-#banner .content-wrapper a {
+#home-banner .content-wrapper a {
   font-size: 1.2rem;
   display: inline-block;
   font-weight: 400;
 }
 
-#banner .content-wrapper a:hover {
+#home-banner .content-wrapper a:hover {
   color: var(--text-white);
 }
 
-#banner .content-wrapper a span {
+#home-banner .content-wrapper a span {
   position: relative;
 }
 
-#banner .content-wrapper a::before {
+#home-banner .content-wrapper a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -461,7 +466,7 @@ main {
   transition: width var(--transition-default);
 }
 
-#banner .content-wrapper a:hover:before {
+#home-banner .content-wrapper a:hover:before {
   width: 100%;
 }
 
@@ -574,6 +579,9 @@ main {
 /* EOF Section About */
 
 /* Section Offers */
+#home-offer {
+  padding-bottom: 150px;
+}
 .hnc-highlight-products { 
   margin-top: 3rem;
 }
@@ -631,3 +639,26 @@ main {
   color: var(--text-primary);
 }
 /* EOF Section Offers */
+#home-separator-cta {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+#home-separator-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(27,30,32);
+  background: linear-gradient(0deg, rgba(27,30,32,1) 0%, rgba(27,30,32,0) 50%, rgba(27,30,32,1) 100%);
+}
+
+.hnc-separator-cta__title .hnc-title::after {
+  content: none;
+}
+/* Section */
