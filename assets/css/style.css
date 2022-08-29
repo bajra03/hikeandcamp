@@ -621,4 +621,13 @@ main {
   display: inline-block;
   margin-left: 10px;
 }
+
+.hnc-highlight-products__price span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.hnc-highlight-products__price strong {
+  color: var(--text-primary);
+}
 /* EOF Section Offers */
