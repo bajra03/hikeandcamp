@@ -1,238 +1,539 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hike and Camp Bali</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=1.5">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
-</head>
-<body id="hnc">
-
-  <!-- header Logo and Menu Toggle -->
-  <header class="fixed-top">
-    <nav class="container-fluid">
-      <div class="logo-wrapper">
-        <a href="#" class="logo">Logo</a>
-      </div>
-      <div class="hamburger">
-        <div class="menu-toggle">
-          <input type="checkbox" id="checkbox-toggle">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hike and Camp Bali</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.6" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body id="hnc">
+    <!-- header Logo and Menu Toggle -->
+    <header class="fixed-top">
+      <nav class="container-fluid">
+        <div class="logo-wrapper">
+          <a href="#" class="logo">Logo</a>
         </div>
-      </div>
-    </nav>
-  </header>
+        <div class="hamburger">
+          <div class="menu-toggle">
+            <input type="checkbox" id="checkbox-toggle" />
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <!-- Slide toggle menu -->
-  <div id="menu-section" class="menu-section">
-    <ul class="menu-wrapper">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Product</a>
-      </li>
-      <li>
-        <a href="#">Gallery</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-    <div>
-      <div class="text-center mb-2">Find us on</div>
-      <ul class="hnc-social-links">
-        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+    <!-- Slide toggle menu -->
+    <div id="menu-section" class="menu-section">
+      <ul class="menu-wrapper">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Gallery</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
       </ul>
+      <div>
+        <div class="text-center mb-2">Find us on</div>
+        <ul class="hnc-social-links">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Section Banner -->
-    <section id="home-banner" class="section-banner">
-      <div class="container">
-        <div class="content-wrapper d-flex justify-content-center align-items-center flex-column">
-          <small class="hnc-small-text d-block">welcome to</small>
-          <h1 class="hnc-title--main">Hike and Camp <span>Bali</span></h1>
-          <div class="hnc-content text-center mb-5">
-            <p class="hnc-content--compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis molestias nam eligendi praesentium, cumque consequuntur qui obcaecati velit fugit quas totam modi provident eos nihil mollitia libero, est delectus.</p>
-          </div>
-          <a href="#" class="btn hnc-btn hnc-btn--primary">
-            <i class="fa-regular fa-calendar position-relative"></i> <span>Book Now</span>
-          </a>
-        </div>
-      </div>
-      <div class="scroll-down"></div>
-    </section>
-
-    <!-- Section About -->
-    <section id="home-about" class="hnc-section-padding">
-      <div class="container">
-        <div class="row hnc-row-reverse">
-          <div class="col-md-6 col-sm-12">
-            <img src="./assets/images/home-img-02.jpg" width="500" alt="Home Image" class="img-fluid mx-auto d-block rounded hnc-box-shadow hnc-image mb-4" />
-          </div>
-          <div class="col-md-6 col-sm-12 d-flex align-items-center">
-            <div class="hnc-content-wrapper">
-              <small class="hnc-small-text d-block">A piece</small>
-              <h2 class="fw-bold hnc-title mb-4">About Us</h2>
-              <div class="content mb-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vitae quasi? Praesentium labore quod esse maiores cum recusandae adipisci quam et maxime ullam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vitae quasi? Praesentium labore quod esse maiores cum recusandae adipisci quam et maxime ullam architecto reiciendis.</p>
-              </div>
-              <a href="#" class="btn hnc-btn hnc-btn--secondary hnc-btn--readmore d-inline-block mb-4">
-                <span class="position-relative">Read more</span> <i class="fa-solid fa-chevron-right position-relative"></i>
-              </a>
-              <ul class="hnc-social-links">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-              </ul>
+    <!-- Main Content -->
+    <main>
+      <!-- Section Banner -->
+      <section id="home-banner" class="section-banner">
+        <div class="container">
+          <div
+            class="content-wrapper d-flex justify-content-center align-items-center flex-column"
+          >
+            <small class="hnc-small-text d-block">welcome to</small>
+            <h1 class="hnc-title--main">Hike and Camp <span>Bali</span></h1>
+            <div class="hnc-content text-center mb-5">
+              <p class="hnc-content--compact">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores reiciendis molestias nam eligendi praesentium, cumque
+                consequuntur qui obcaecati velit fugit quas totam modi provident
+                eos nihil mollitia libero, est delectus.
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="home-offer" class="hnc-section-padding">
-      <div class="container">
-        <div class="hnc-content-wrapper text-md-center mb-4">
-          <small class="hnc-small-text d-block">Things</small>
-          <h2 class="hnc-title fw-bold mb-4">We offer</h2>
-          <div class="hnc-content">
-            <p class="hnc-content--compact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quisquam accusamus officia aliquid, assumenda ex? Nisi in animi quia, est, delectus mollitia consectetur ex nam architecto sint unde totam labore?</p>
-          </div>
-        </div>
-        <div class="hnc-icon-wrapper d-flex justify-content-md-center">
-          <div class="hnc-icon__inner d-flex flex-column align-items-center justify-content-between">
-            <img src="./assets/images/icons/tent.png" alt="Tent" width="50" />
-            <span>20+ Tent</span>
-          </div>
-          <div class="hnc-icon__inner d-flex flex-column align-items-center">
-            <img src="./assets/images/icons/backpack.png" alt="Tent" width="50" />
-            <span>20+ Backpack</span>
-          </div>
-          <div class="hnc-icon__inner d-flex flex-column align-items-center">
-            <img src="./assets/images/icons/shoe.png" alt="Tent" width="50" />
-            <span>20+ Shoes</span>
-          </div>
-          <div class="hnc-icon__inner d-flex flex-column align-items-center">
-            <img src="./assets/images/icons/cooking.png" alt="Tent" width="50" />
-            <span>Cooking Tools</span>
-          </div>
-          <div class="hnc-icon__inner d-flex flex-column align-items-center">
-            <img src="./assets/images/icons/map.png" alt="Tent" width="50" />
-            <span>Many More</span>
-          </div>
-        </div>
-
-        <div class="hnc-highlight-products">
-          <div class="hnc-highlight-products__wrapper">
-            <div class="hnc-highlight-products__img" style="background: url(./assets/images/home-highlight-product-01.jpg);"></div>
-            <div class="hnc-highlight-products__details">
-              <div class="hnc-highlight-products__title mb-4">
-                <h3 class="hnc-title fw-bold">Product Name</h3>
-              </div>
-              <div class="hnc-highlight-products__desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, impedit iusto optio quasi magni consequatur harum doloremque et.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, impedit iusto optio quasi magni consequatur harum doloremque et a nihil vel esse eligendi voluptatibus fugit sequi voluptatem, eaque cumque ut?</p>
-              </div>
-              <div class="hnc-highlight-products__feature">
-                <ul>
-                  <li><span>Feature 1</span></li>
-                  <li><span>Feature 2</span></li>
-                  <li><span>Feature 3</span></li>
-                </ul>
-              </div>
-              <div class="hnc-highlight-products__price mb-4">
-                <span>IDR <strong>25,000</strong> / day</span>
-              </div>
-              <div class="hnc-highlight-products__cta">
-                <a href="#" class="btn hnc-btn hnc-btn--secondary d-inline-block">
-                  <span class="position-relative">Book now</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="hnc-highlight-products__wrapper mt-5 hnc-row-reverse">
-            <div class="hnc-highlight-products__img" style="background: url(./assets/images/home-highlight-product-06.jpg);"></div>
-            <div class="hnc-highlight-products__details">
-              <div class="hnc-highlight-products__title mb-4">
-                <h3 class="hnc-title fw-bold">Product Name</h3>
-              </div>
-              <div class="hnc-highlight-products__desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, impedit iusto optio quasi magni consequatur harum doloremque et a nihil vel esse eligendi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, impedit iusto optio quasi magni consequatur harum doloremque et a nihil vel esse eligendi voluptatibus.</p>
-              </div>
-              <div class="hnc-highlight-products__feature">
-                <ul>
-                  <li><span>Feature 1</span></li>
-                  <li><span>Feature 2</span></li>
-                  <li><span>Feature 3</span></li>
-                </ul>
-              </div>
-              <div class="hnc-highlight-products__price mb-4">
-                <span>IDR <strong>25,000</strong> / day</span>
-              </div>
-              <div class="hnc-highlight-products__cta">
-                <a href="#" class="btn hnc-btn hnc-btn--secondary d-inline-block">
-                  <span class="position-relative">Book now</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="home-separator-cta" class="hnc-section-cta py-5" style="background: url(./assets/images/home-img-03.jpg);">
-      <div class="container">
-        <div class="hnc-separator-cta text-center">
-          <div class="hnc-separator-cta__title mb-4">
-            <h2 class="hnc-title fw-bold">Take only <span>memories</span>, leave only <span>footprints</span></h2>
-          </div>
-          <div class="hnc-separator-cta__cta">
-            <a href="#" class="btn hnc-btn hnc-btn--secondary d-inline-block">
-              <span class="position-relative">Book now</span>
+            <a href="#" class="btn hnc-btn hnc-btn--primary">
+              <i class="fa-regular fa-calendar position-relative"></i>
+              <span>Book Now</span>
             </a>
           </div>
         </div>
+        <div class="scroll-down"></div>
+      </section>
+
+      <!-- Section About -->
+      <section id="home-about" class="hnc-section-padding">
+        <div class="container">
+          <div class="row hnc-row-reverse">
+            <div class="col-md-6 col-sm-12">
+              <img
+                src="./assets/images/home-img-02.jpg"
+                width="500"
+                alt="Home Image"
+                class="img-fluid mx-auto d-block rounded hnc-box-shadow hnc-image mb-4"
+              />
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center">
+              <div class="hnc-content-wrapper">
+                <small class="hnc-small-text d-block">A piece</small>
+                <h2 class="fw-bold hnc-title mb-4">About Us</h2>
+                <div class="content mb-5">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsum, vitae quasi? Praesentium labore quod esse maiores cum
+                    recusandae adipisci quam et maxime ullam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsum, vitae quasi? Praesentium labore quod esse maiores cum
+                    recusandae adipisci quam et maxime ullam architecto
+                    reiciendis.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn hnc-btn hnc-btn--secondary hnc-btn--readmore d-inline-block mb-4"
+                >
+                  <span class="position-relative">Read more</span>
+                  <i class="fa-solid fa-chevron-right position-relative"></i>
+                </a>
+                <ul class="hnc-social-links">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Offer -->
+      <section id="home-offer" class="hnc-section-padding">
+        <div class="container">
+          <div class="hnc-content-wrapper text-md-center mb-4">
+            <small class="hnc-small-text d-block">Things</small>
+            <h2 class="hnc-title fw-bold mb-4">We offer</h2>
+            <div class="hnc-content">
+              <p class="hnc-content--compact">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                quisquam accusamus officia aliquid, assumenda ex? Nisi in animi
+                quia, est, delectus mollitia consectetur ex nam architecto sint
+                unde totam labore?
+              </p>
+            </div>
+          </div>
+          <div class="hnc-icon-wrapper d-flex justify-content-md-center">
+            <div
+              class="hnc-icon__inner d-flex flex-column align-items-center justify-content-between"
+            >
+              <img src="./assets/images/icons/tent.png" alt="Tent" width="50" />
+              <span>20+ Tent</span>
+            </div>
+            <div class="hnc-icon__inner d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/icons/backpack.png"
+                alt="Tent"
+                width="50"
+              />
+              <span>20+ Backpack</span>
+            </div>
+            <div class="hnc-icon__inner d-flex flex-column align-items-center">
+              <img src="./assets/images/icons/shoe.png" alt="Tent" width="50" />
+              <span>20+ Shoes</span>
+            </div>
+            <div class="hnc-icon__inner d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/icons/cooking.png"
+                alt="Tent"
+                width="50"
+              />
+              <span>Cooking Tools</span>
+            </div>
+            <div class="hnc-icon__inner d-flex flex-column align-items-center">
+              <img src="./assets/images/icons/map.png" alt="Tent" width="50" />
+              <span>Many More</span>
+            </div>
+          </div>
+
+          <div class="hnc-highlight-products">
+            <div class="hnc-highlight-products__wrapper">
+              <div
+                class="hnc-highlight-products__img"
+                style="
+                  background: url(./assets/images/home-highlight-product-01.jpg);
+                "
+              ></div>
+              <div class="hnc-highlight-products__details">
+                <div class="hnc-highlight-products__title mb-4">
+                  <h3 class="hnc-title fw-bold">Product Name</h3>
+                </div>
+                <div class="hnc-highlight-products__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Perferendis, impedit iusto optio quasi magni consequatur
+                    harum doloremque et.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Perferendis, impedit iusto optio quasi magni consequatur
+                    harum doloremque et a nihil vel esse eligendi voluptatibus
+                    fugit sequi voluptatem, eaque cumque ut?
+                  </p>
+                </div>
+                <div class="hnc-highlight-products__feature">
+                  <ul>
+                    <li><span>Feature 1</span></li>
+                    <li><span>Feature 2</span></li>
+                    <li><span>Feature 3</span></li>
+                  </ul>
+                </div>
+                <div class="hnc-highlight-products__price mb-4">
+                  <span>IDR <strong>25,000</strong> / day</span>
+                </div>
+                <div class="hnc-highlight-products__cta">
+                  <a
+                    href="#"
+                    class="btn hnc-btn hnc-btn--secondary d-inline-block"
+                  >
+                    <span class="position-relative">Book now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hnc-highlight-products__wrapper mt-5 hnc-row-reverse">
+              <div
+                class="hnc-highlight-products__img"
+                style="
+                  background: url(./assets/images/home-highlight-product-06.jpg);
+                "
+              ></div>
+              <div class="hnc-highlight-products__details">
+                <div class="hnc-highlight-products__title mb-4">
+                  <h3 class="hnc-title fw-bold">Product Name</h3>
+                </div>
+                <div class="hnc-highlight-products__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Perferendis, impedit iusto optio quasi magni consequatur
+                    harum doloremque et a nihil vel esse eligendi.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Perferendis, impedit iusto optio quasi magni consequatur
+                    harum doloremque et a nihil vel esse eligendi voluptatibus.
+                  </p>
+                </div>
+                <div class="hnc-highlight-products__feature">
+                  <ul>
+                    <li><span>Feature 1</span></li>
+                    <li><span>Feature 2</span></li>
+                    <li><span>Feature 3</span></li>
+                  </ul>
+                </div>
+                <div class="hnc-highlight-products__price mb-4">
+                  <span>IDR <strong>25,000</strong> / day</span>
+                </div>
+                <div class="hnc-highlight-products__cta">
+                  <a
+                    href="#"
+                    class="btn hnc-btn hnc-btn--secondary d-inline-block"
+                  >
+                    <span class="position-relative">Book now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Separator with CTA -->
+      <section
+        id="home-separator-cta"
+        class="hnc-section-cta py-5"
+        style="background: url(./assets/images/home-img-03.jpg)"
+      >
+        <div class="container">
+          <div class="hnc-separator-cta text-center">
+            <div class="hnc-separator-cta__title mb-4">
+              <h2 class="hnc-title fw-bold">
+                Take only <span>memories</span>, leave only
+                <span>footprints</span>
+              </h2>
+            </div>
+            <div class="hnc-separator-cta__cta">
+              <a href="#" class="btn hnc-btn hnc-btn--secondary d-inline-block">
+                <span class="position-relative">Book now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Product -->
+      <section id="home-product" class="hnc-section-padding">
+        <div class="container">
+          <div class="hnc-content-wrapper text-md-center mb-4">
+            <small class="hnc-small-text d-block">Awesome</small>
+            <h2 class="hnc-title fw-bold mb-4">Products</h2>
+            <div class="hnc-content">
+              <p class="hnc-content--compact">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                quisquam accusamus officia aliquid, assumenda ex? Nisi in animi
+                quia, est, delectus mollitia consectetur ex nam architecto sint
+                unde totam labore?
+              </p>
+            </div>
+          </div>
+          <div class="hnc-product__container">
+            <div class="hnc-product__btn-group hnc-product__btn-filter-group">
+              <button class="hnc-btn-product__filter is-active" data-filter="">
+                All
+              </button>
+              <button class="hnc-btn-product__filter" data-filter=".tent">
+                Tent
+              </button>
+              <button class="hnc-btn-product__filter" data-filter=".backpack">
+                Backpack
+              </button>
+              <button class="hnc-btn-product__filter" data-filter=".shoes">
+                Shoes
+              </button>
+            </div>
+            <div
+              class="hnc-products grid transitions-enabled fluid masonry js-masonry"
+            >
+              <div class="hnc-product tent grid-item">
+                <div
+                  class="hnc-product__inner"
+                  style="
+                    background: url(./assets/images/home-highlight-product-01.jpg);
+                  "
+                >
+                  <div class="hnc-product__content">
+                    <div class="hnc-product__title">
+                      <h6 class="fw-bold">Product Tent 1</h6>
+                    </div>
+                    <div class="hnc-product__price">
+                      <strong>IDR <span>25,000</span> / day</strong>
+                    </div>
+                    <div class="hnc-product__booknow">
+                      <a href="#" class="btn hnc-btn hnc-btn--secondary"
+                        ><span class="position-relative">Book now</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hnc-product backpack grid-item">
+                <div
+                  class="hnc-product__inner"
+                  style="
+                    background: url(./assets/images/home-highlight-product-02.jpg);
+                  "
+                >
+                  <div class="hnc-product__content">
+                    <div class="hnc-product__title">
+                      <h6 class="fw-bold">Product Backpack 1</h6>
+                    </div>
+                    <div class="hnc-product__price">
+                      <strong>IDR <span>25,000</span> / day</strong>
+                    </div>
+                    <div class="hnc-product__booknow">
+                      <a href="#" class="btn hnc-btn hnc-btn--secondary"
+                        ><span class="position-relative">Book now</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hnc-product shoes grid-item">
+                <div
+                  class="hnc-product__inner"
+                  style="
+                    background: url(./assets/images/home-highlight-product-03.jpg);
+                  "
+                >
+                  <div class="hnc-product__content">
+                    <div class="hnc-product__title">
+                      <h6 class="fw-bold">Product Shoes 1</h6>
+                    </div>
+                    <div class="hnc-product__price">
+                      <strong>IDR <span>25,000</span> / day</strong>
+                    </div>
+                    <div class="hnc-product__booknow">
+                      <a href="#" class="btn hnc-btn hnc-btn--secondary"
+                        ><span class="position-relative">Book now</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hnc-product tent grid-item">
+                <div
+                  class="hnc-product__inner"
+                  style="
+                    background: url(./assets/images/home-highlight-product-04.jpg);
+                  "
+                >
+                  <div class="hnc-product__content">
+                    <div class="hnc-product__title">
+                      <h6 class="fw-bold">Product Tent 2</h6>
+                    </div>
+                    <div class="hnc-product__price">
+                      <strong>IDR <span>25,000</span> / day</strong>
+                    </div>
+                    <div class="hnc-product__booknow">
+                      <a href="#" class="btn hnc-btn hnc-btn--secondary"
+                        ><span class="position-relative">Book now</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hnc-product backpack grid-item">
+                <div
+                  class="hnc-product__inner"
+                  style="
+                    background: url(./assets/images/home-highlight-product-05.jpg);
+                  "
+                >
+                  <div class="hnc-product__content">
+                    <div class="hnc-product__title">
+                      <h6 class="fw-bold">Product Backpack 2</h6>
+                    </div>
+                    <div class="hnc-product__price">
+                      <strong>IDR <span>25,000</span> / day</strong>
+                    </div>
+                    <div class="hnc-product__booknow">
+                      <a href="#" class="btn hnc-btn hnc-btn--secondary"
+                        ><span class="position-relative">Book now</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hnc-product shoes grid-item">
+                <div
+                  class="hnc-product__inner"
+                  style="
+                    background: url(./assets/images/home-highlight-product-06.jpg);
+                  "
+                >
+                  <div class="hnc-product__content">
+                    <div class="hnc-product__title">
+                      <h6 class="fw-bold">Product Shoes 2</h6>
+                    </div>
+                    <div class="hnc-product__price">
+                      <strong>IDR <span>25,000</span> / day</strong>
+                    </div>
+                    <div class="hnc-product__booknow">
+                      <a href="#" class="btn hnc-btn hnc-btn--secondary"
+                        ><span class="position-relative">Book now</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center py-5">
+      <div class="container">
+        <small class="fw-300"
+          >&copy; 2022 hikeandcampbali. All right reserved.</small
+        >
       </div>
-    </section>
+    </footer>
 
-  </main>
-  <footer class="text-center py-5">
-    <div class="container">
-      <small class="fw-300">&copy; 2022 hikeandcampbali. All right reserved.</small>
-    </div>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./assets/js/main.js?v=1.5"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/main.js?v=1.6"></script>
+  </body>
 </html>
