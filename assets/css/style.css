@@ -734,6 +734,7 @@ main {
   background-size: cover !important;
   position: relative;
   transition: var(--transition-default);
+  box-shadow: var(--hnc-box-shadow);
 }
 
 .hnc-product__inner::before {

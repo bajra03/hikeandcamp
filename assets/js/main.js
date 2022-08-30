@@ -34,12 +34,3 @@ for (i = 0; i < gridFilters.length; i++) {
 
 // Add class active to filter button
 let btnFilters = document.querySelectorAll(".hnc-btn-product__filter");
-
-for (btnFilter of btnFilters) {
-  btnFilter.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log(btnFilters);
-    btnFilters.classList.remove("is-active");
-    this.classList.add("is-active");
-  });
-}
