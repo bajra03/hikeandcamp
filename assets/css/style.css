@@ -696,7 +696,7 @@ main {
 /* Section Home Product*/
 .hnc-product__btn-group {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
   align-items: center;
   margin: 3rem 0 4rem;
@@ -710,7 +710,8 @@ main {
   transition: var(--transition-default);
 }
 
-.hnc-btn-product__filter:hover {
+.hnc-btn-product__filter:hover,
+.hnc-btn-product__filter.is-active {
   color: var(--text-primary);
   text-decoration: underline;
 }

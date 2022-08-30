@@ -3,6 +3,10 @@
   .grid-item {
     width: 50%;
   }
+
+  .hnc-product__btn-group {
+    justify-content: center;
+  }
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
