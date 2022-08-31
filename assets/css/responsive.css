@@ -105,6 +105,26 @@
   .grid-item {
     width: 25%;
   }
+
+  /* Home Product */
+  .hnc-product__inner::before {
+    background-color: unset;
+  }
+
+  .hnc-product:hover .hnc-product__inner::before {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .hnc-product__content {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .hnc-product:hover .hnc-product__content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* EOF Home Product */
 }
 
 /* hi-res laptops and desktops */

@@ -21,7 +21,7 @@ const iso = new Isotope(elm, {
 
 // bind filter button on click
 var gridFilters = document.querySelectorAll(".hnc-product__btn-group button");
-for (i = 0; i < gridFilters.length; i++) {
+for (let i = 0; i < gridFilters.length; i++) {
   gridFilters[i].addEventListener("click", function () {
     // console.log(
     //   " " + this.parentElement.getAttribute("class") + " " + this.dataset.filter
@@ -33,4 +33,15 @@ for (i = 0; i < gridFilters.length; i++) {
 }
 
 // Add class active to filter button
-let btnFilters = document.querySelectorAll(".hnc-btn-product__filter");
+let btnFiltersGroup = document.querySelector(".hnc-product__btn-filter-group");
+let btnFilters = btnFiltersGroup.getElementsByClassName(
+  "hnc-btn-product__filter"
+);
+
+for (let i = 0; i < btnFilters.length; i++) {
+  btnFilters[i].addEventListener("click", function () {
+    const currentBtn = document.getElementsByClassName("is-active");
+    currentBtn[0].className = currentBtn[0].className.replace("is-active", " ");
+    this.className += " is-active";
+  });
+}

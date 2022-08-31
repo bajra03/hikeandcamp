@@ -44,7 +44,9 @@ body {
 body.active {
   right: 300px;
 }
-body.active main {
+
+body.active main,
+body.active footer {
   filter: blur(1px);
 }
 
@@ -75,6 +77,10 @@ section {
 
 p {
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 /* EOF GENERAL */
 
@@ -225,6 +231,10 @@ p {
 
 .hnc-row-reverse {
   flex-direction: column;
+}
+
+.hnc-text--primary {
+  color: var(--text-primary);
 }
 /* EOF HIKE AND CAMP CUSTOM CLASS */
 
@@ -746,22 +756,14 @@ main {
   width: 100%;
   height: 100%;
   transition: var(--transition-default);
-}
-
-.hnc-product__inner:hover::before {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hnc-product__content {
   position: relative;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: var(--transition-default);
-}
-
-.hnc-product:hover .hnc-product__content {
   opacity: 1;
   transform: translateY(0);
+  transition: var(--transition-default);
 }
 
 .hnc-product__title h6 {
@@ -774,5 +776,28 @@ main {
 
 .hnc-product__price span {
   color: var(--text-primary);
+}
+
+.hnc-product__cta {
+  position: relative;
+}
+
+.hnc-product__cta a {
+  transition: var(--transition-default);
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.hnc-product__cta a > svg {
+  transition: var(--transition-default);
+}
+
+.hnc-product__cta a:hover {
+  color: var(--text-white);
+}
+
+.hnc-product__cta a:hover svg {
+  transform: translateX(5px);
 }
 /* EOF Section Home Product*/
