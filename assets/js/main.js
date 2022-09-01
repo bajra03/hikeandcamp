@@ -17,6 +17,10 @@ const iso = new Isotope(elm, {
   layoutMode: "fitRows",
   stagger: 8,
   transitionDuration: "0.6s",
+  percentPosition: true,
+  masonry: {
+    columnWidth: ".grid-sizer",
+  },
 });
 
 // bind filter button on click
@@ -45,3 +49,25 @@ for (let i = 0; i < btnFilters.length; i++) {
     this.className += " is-active";
   });
 }
+
+// Swiper Slider
+const swiperConfig = {
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 480px
+    481: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+};
+
+// const swiper = new Swiper(".swiper-container", swiperConfig);

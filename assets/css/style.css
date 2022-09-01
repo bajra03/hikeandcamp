@@ -50,7 +50,8 @@ body.active footer {
   filter: blur(1px);
 }
 
-body.active main::before {
+body.active main::before,
+body.active footer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -89,6 +90,8 @@ a {
   border-radius: 0;
   padding: 10px 50px;
   position: relative;
+  border-width: 2px;
+  font-weight: 500 !important;
 }
 
 .hnc-btn--primary {
@@ -235,6 +238,22 @@ a {
 
 .hnc-text--primary {
   color: var(--text-primary);
+}
+
+.hnc-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(27, 30, 32);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 30, 32, 1) 0%,
+    rgba(27, 30, 32, 0) 50%,
+    rgba(27, 30, 32, 1) 100%
+  );
 }
 /* EOF HIKE AND CAMP CUSTOM CLASS */
 
@@ -389,7 +408,8 @@ ul.menu-wrapper li a {
   font-weight: 500;
 }
 
-ul.menu-wrapper li a:hover {
+ul.menu-wrapper li a:hover,
+ul.menu-wrapper li a.active {
   color: var(--text-primary);
   background-color: #1a1a1a;
 }
@@ -675,6 +695,8 @@ main {
   color: var(--text-primary);
 }
 /* EOF Section Offers */
+
+/* Section Home Separator */
 #home-separator-cta {
   min-height: 500px;
   display: flex;
@@ -683,25 +705,10 @@ main {
   background-size: cover !important;
 }
 
-#home-separator-cta::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(27, 30, 32);
-  background: linear-gradient(
-    0deg,
-    rgba(27, 30, 32, 1) 0%,
-    rgba(27, 30, 32, 0) 50%,
-    rgba(27, 30, 32, 1) 100%
-  );
-}
-
 .hnc-separator-cta__title .hnc-title::after {
   content: none;
 }
+/* EOF Section Home Separator */
 
 /* Section Home Product*/
 .hnc-product__btn-group {
@@ -801,3 +808,20 @@ main {
   transform: translateX(5px);
 }
 /* EOF Section Home Product*/
+
+/* Section Home Blogs */
+#home-blog {
+  padding-bottom: 150px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.hnc-blog {
+  margin-bottom: 3rem;
+}
+
+.hnc-blog__article {
+  min-height: 400px;
+  background-color: var(--bg-dark);
+}
+/* EOF Section Home Blogs */
