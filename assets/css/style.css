@@ -255,6 +255,18 @@ a {
     rgba(27, 30, 32, 1) 100%
   );
 }
+
+.hnc-readmore {
+  transition: var(--transition-default);
+}
+
+.hnc-readmore:hover {
+  color: var(--text-white);
+}
+
+.hnc-readmore svg {
+  transition: var(--transition-default);
+}
 /* EOF HIKE AND CAMP CUSTOM CLASS */
 
 /* ISOTOPE GRID */
@@ -816,12 +828,96 @@ main {
   background-size: cover !important;
 }
 
+.hnc-blog__container {
+  overflow: hidden;
+  padding: 15px 0;
+}
+
 .hnc-blog {
   margin-bottom: 3rem;
 }
 
 .hnc-blog__article {
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
   min-height: 400px;
   background-color: var(--bg-dark);
+  box-shadow: var(--hnc-box-shadow);
+}
+
+.hnc-blog__article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 30, 32, 0.5);
+  transition: var(--transition-default);
+}
+
+.hnc-blog__info {
+  position: relative;
+  transform: translateY(0px);
+  transition: var(--transition-default);
+}
+
+.hnc-blog__title a {
+  color: inherit;
+}
+
+.hnc-blog__title a h6 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.hnc-blog__content {
+  opacity: 1;
+  transition: var(--transition-default);
+}
+
+.hnc-blog__content a {
+  transition: var(--transition-default);
+}
+
+.hnc-blog__content a:hover {
+  color: var(--text-white);
+}
+
+#home-blog .swiper-pagination {
+  bottom: -15px;
+}
+
+#home-blog .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 12px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+#home-blog .swiper-pagination-bullet-active {
+  background: rgba(194, 103, 28, 1);
+  width: 20px;
+  border-radius: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff;
+  opacity: 1;
+  transition: var(--transition-default);
 }
 /* EOF Section Home Blogs */

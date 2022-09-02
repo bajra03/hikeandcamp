@@ -143,11 +143,9 @@
                 </div>
                 <a
                   href="#"
-                  class="btn hnc-btn hnc-btn--secondary hnc-btn--readmore d-inline-block mb-4"
-                >
-                  <span class="position-relative">Read more</span>
-                  <i class="fa-solid fa-chevron-right position-relative"></i>
-                </a>
+                  class="hnc-readmore fw-bold hnc-text--primary d-inline-block mb-4"
+                  >Read more <i class="fa-solid fa-arrow-right"></i
+                ></a>
                 <ul class="hnc-social-links">
                   <li>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -565,7 +563,9 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-3">
-              <div class="container">
+              <div
+                class="container position-relative hnc-blog-title__container"
+              >
                 <div class="hnc-blog">
                   <small class="hnc-small-text d-block">For your</small>
                   <h2 class="hnc-title fw-bold">Articles</h2>
@@ -581,10 +581,13 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-9">
-              <div class="container position-relative">
-                <div class="hnc-blog__container swiper-containerX">
-                  <div class="swiper-wrapperX">
-                    <div class="hnc-blog__article swiper-slideX">
+              <div class="position-relative">
+                <div class="hnc-blog__container swiper-container">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="hnc-blog__article swiper-slide"
+                      style="background: url(./assets/images/bg-banner-04.jpg)"
+                    >
                       <div class="hnc-blog__info">
                         <div class="hnc-blog__title">
                           <a href="#" target="_self">
@@ -594,12 +597,18 @@
                         <div class="hnc-blog__content">
                           <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
+                            elit...
                           </p>
+                          <a href="#" class="fw-bold hnc-text--primary"
+                            >Read more <i class="fa-solid fa-arrow-right"></i
+                          ></a>
                         </div>
                       </div>
                     </div>
-                    <div class="hnc-blog__article swiper-slide">
+                    <div
+                      class="hnc-blog__article swiper-slide"
+                      style="background: url(./assets/images/bg-banner-05.jpg)"
+                    >
                       <div class="hnc-blog__info">
                         <div class="hnc-blog__title">
                           <a href="#" target="_self">
@@ -609,12 +618,18 @@
                         <div class="hnc-blog__content">
                           <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
+                            elit...
                           </p>
+                          <a href="#" class="fw-bold hnc-text--primary"
+                            >Read more <i class="fa-solid fa-arrow-right"></i
+                          ></a>
                         </div>
                       </div>
                     </div>
-                    <div class="hnc-blog__article swiper-slide">
+                    <div
+                      class="hnc-blog__article swiper-slide"
+                      style="background: url(./assets/images/bg-banner-03.jpg)"
+                    >
                       <div class="hnc-blog__info">
                         <div class="hnc-blog__title">
                           <a href="#" target="_self">
@@ -624,17 +639,43 @@
                         <div class="hnc-blog__content">
                           <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
+                            elit...
                           </p>
+                          <a href="#" class="fw-bold hnc-text--primary"
+                            >Read more <i class="fa-solid fa-arrow-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="hnc-blog__article swiper-slide"
+                      style="background: url(./assets/images/bg-banner-02.jpg)"
+                    >
+                      <div class="hnc-blog__info">
+                        <div class="hnc-blog__title">
+                          <a href="#" target="_self">
+                            <h6 class="fw-bold">Article Title</h6>
+                          </a>
+                        </div>
+                        <div class="hnc-blog__content">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit...
+                          </p>
+                          <a href="#" class="fw-bold hnc-text--primary"
+                            >Read more <i class="fa-solid fa-arrow-right"></i
+                          ></a>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!-- pagination -->
+                  <div class="swiper-pagination"></div>
                   <!-- If we need navigation buttons -->
-                  <!-- <div class="navigation">
+                  <div class="navigation">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>

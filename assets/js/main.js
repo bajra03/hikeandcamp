@@ -54,20 +54,35 @@ for (let i = 0; i < btnFilters.length; i++) {
 const swiperConfig = {
   // Default parameters
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 0,
+  loop: true,
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 480px
+    // when window width is >= 481px
     481: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
-    // when window width is >= 640px
-    640: {
+    // when window width is >= 1024px
+    1024: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 10,
     },
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 };
 
-// const swiper = new Swiper(".swiper-container", swiperConfig);
+const swiper = new Swiper(".swiper-container", swiperConfig);

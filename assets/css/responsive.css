@@ -18,6 +18,18 @@
   .hnc-highlight-products__wrapper {
     flex-direction: row;
   }
+
+  /* Home Blogs */
+  .hnc-blog-title__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hnc-blog__cta-wrapper a {
+    padding: 10px 25px;
+  }
+  /* EOF Home Blogs */
 }
 
 /* big landscape tablets, laptops, and desktops */
@@ -125,6 +137,58 @@
     transform: translateY(0);
   }
   /* EOF Home Product */
+
+  /* Home Blogs */
+  .hnc-blog__article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: var(--transition-default);
+  }
+
+  .hnc-blog__article:hover::before {
+    background: rgba(27, 30, 32, 0.5);
+  }
+
+  .hnc-blog__info {
+    transform: translateY(70px);
+  }
+
+  .hnc-blog__content {
+    opacity: 0;
+  }
+
+  .hnc-blog__article:hover .hnc-blog__info {
+    transform: translateY(0);
+  }
+
+  .hnc-blog__article:hover .hnc-blog__content {
+    opacity: 1;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 0;
+  }
+
+  .swiper-button-prev {
+    transform: translateX(40px);
+  }
+
+  .swiper-button-next {
+    transform: translateX(-40px);
+  }
+
+  .hnc-blog__container:hover .swiper-button-prev,
+  .hnc-blog__container:hover .swiper-button-next {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* EOF Home Blogs */
 }
 
 /* hi-res laptops and desktops */
