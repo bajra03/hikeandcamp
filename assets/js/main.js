@@ -86,3 +86,7 @@ const swiperConfig = {
 };
 
 const swiper = new Swiper(".swiper-container", swiperConfig);
+
+// Footer
+const date = new Date();
+document.querySelector(".hnc-footer__year").innerHTML = date.getFullYear();

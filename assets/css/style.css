@@ -946,4 +946,14 @@ main {
 .hnc-footer__copyright small {
   color: #666666;
 }
+
+.hnc-footer__copyright small a {
+  color: inherit;
+  text-decoration: underline;
+  transition: var(--transition-default);
+}
+
+.hnc-footer__copyright small a:hover {
+  color: var(--text-primary);
+}
 /* EOF FOOTER */
