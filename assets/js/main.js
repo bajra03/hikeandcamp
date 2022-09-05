@@ -85,7 +85,7 @@ const swiperConfig = {
   },
 };
 
-const swiper = new Swiper(".swiper-container", swiperConfig);
+const swiper = new Swiper(".hnc-blog__container", swiperConfig);
 
 // Footer
 const date = new Date();
