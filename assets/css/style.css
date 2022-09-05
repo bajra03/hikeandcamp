@@ -169,7 +169,7 @@ a {
 
 .hnc-title--main {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.5em;
   text-transform: uppercase;
 }
@@ -723,6 +723,13 @@ main {
 /* EOF Section Home Separator */
 
 /* Section Home Product*/
+.hnc-product {
+  float: left;
+  width: 50%;
+  height: 300px;
+  padding: 5px;
+}
+
 .hnc-product__btn-group {
   display: flex;
   justify-content: flex-start;
@@ -743,13 +750,6 @@ main {
 .hnc-btn-product__filter.is-active {
   color: var(--text-primary);
   text-decoration: underline;
-}
-
-.hnc-product {
-  float: left;
-  width: 100%;
-  height: 400px;
-  padding: 5px;
 }
 
 .hnc-product__inner {
@@ -797,6 +797,10 @@ main {
   color: var(--text-primary);
 }
 
+.hnc-product__booknow a {
+  padding: 10px 30px;
+}
+
 .hnc-product__cta {
   position: relative;
 }
@@ -805,19 +809,7 @@ main {
   transition: var(--transition-default);
   position: relative;
   display: inline-block;
-  font-size: 1.2rem;
-}
-
-.hnc-product__cta a > svg {
-  transition: var(--transition-default);
-}
-
-.hnc-product__cta a:hover {
-  color: var(--text-white);
-}
-
-.hnc-product__cta a:hover svg {
-  transform: translateX(5px);
+  font-size: 1rem;
 }
 /* EOF Section Home Product*/
 
@@ -921,3 +913,37 @@ main {
   transition: var(--transition-default);
 }
 /* EOF Section Home Blogs */
+
+/* FOOTER */
+.hnc-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hnc-footer__logo {
+  margin-bottom: 1rem;
+}
+
+.hnc-footer__socials {
+  margin-bottom: 1rem;
+}
+
+.hnc-footer__socials ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.hnc-footer__socials ul li a {
+  color: var(--text-white);
+  transition: var(--transition-default);
+}
+
+.hnc-footer__copyright small {
+  color: #666666;
+}
+/* EOF FOOTER */
